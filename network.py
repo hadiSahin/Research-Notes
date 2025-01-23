@@ -92,7 +92,7 @@ app.layout = html.Div([
             id='month-dropdown',
             options=[{'label': 'All', 'value': 'All'}] + [{'label': str(month), 'value': month} for month in range(1, 13)],
             value='All',
-            multi=True
+            # multi=True
         ),
     ], style={'width': '17%', 'display': 'inline-block', 'verticalAlign': 'top'}),
     html.Div([
