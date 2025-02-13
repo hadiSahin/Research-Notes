@@ -82,6 +82,10 @@ In the above figure, we presented the time required to process each script. Howe
 
 <img src="./images/apddos_timeline.png" alt="Automated DDoS Detection Timeline" width="500">
 
+### January 15, 2025
+
+Using the improved DDoS detection mechanism, we conducted several experiments to identify DDoS attacks. We used Kentik alerts as ground truth and compared the results from unsupervised models, particularly autoencoders and generative adversarial networks. The unsupervised models detected most of the DDoS attacks identified by Kentik; however, they also flagged additional attack cases, some of which may be false positives. We aim to minimize these false positives as much as possible. 
+
 ## References
 [1] G. Fernandes, J. J. Rodrigues, L. F. Carvalho, J. F. Al-Muhtadi, and M. L. Proen c¸ a, “A comprehensive survey on network anomaly detection,”Telecommunication Systems, vol. 70, pp. 447–489, 2019.
 
