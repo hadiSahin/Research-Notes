@@ -17,3 +17,7 @@ We sent packets using the EXFO NetBlazer and measured the following:
 The test from BERToD produced over 400,000 rows of data, including the frame size (68, 256, 512, 1024, 1518, 9000 bytes), the duration of each test run, and the total number of frames/packets sent. I also incorporated data for all the links through which the test packets were sent. For example, a link between VLANs 410 and 416 is labeled as "410_416" and is coded as 1 if the packets pass through this link and 0 otherwise. I first mapped all the network links as a tree (see the figure below). Then, I ran logistic regression and Neural Network ML models, using failures as the outcome variable and all other variables, including the links, as features.
 
 <img src="./images/network_tree.png" alt="Network tree" width="1200">
+
+### February 12, 2025
+
+We read the network topology using EVC from Kytos-ng and combined it with test results obtained from the EXFO NetBlazer. We utilize statistical models and machine learning to identify the links responsible for failures.
