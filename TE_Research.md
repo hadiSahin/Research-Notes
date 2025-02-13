@@ -4,14 +4,13 @@ This project aims to create an automated testing tool to check all possible link
 
 <img src="./images/BERToD.png" alt="BERToD - Bit Error Rate Test on Demand" width="500">
 
-We sent packets through EXFO NetBlazer and measure the following:
--Failures
-  - Jitter, latency, out of sequence, and frame loss
-- Packet properties
-  - Frame size mix (68, 256, 512, 10124, 1518) or fixed (9000) bytes
-  - Duration
-  - Number of packets sent
+We sent packets using the EXFO NetBlazer and measured the following:
 
+-Failures: Jitter, latency, out-of-sequence packets, and frame loss
+-Packet Properties:
+  -Frame size: Mixed (68, 256, 512, 10124, 1518) or fixed (9000) bytes
+  -Duration
+  -Number of packets sent
 
 ### January 9, 2025
 
