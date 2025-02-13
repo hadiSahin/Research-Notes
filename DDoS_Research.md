@@ -93,7 +93,7 @@ During fine-tuning, the generative adversarial network did not converge to a sta
 - Feature Engineering: Added new features such as the average and standard deviation of queue occupancy, inter-arrival time, packet rate, and flow rate. Additionally, we incorporated flag ratios like SYN/ACK and FIN/ACK, as well as service-related features such as the ECN fraction (the fraction of nonzero values).
 - Incremental Training: Trained the model incrementally using multiple batches of normal flows. We preserved 10% of the trained data, added it to the latest training set, and saved the model along with the threshold and scaler values.
 - Threshold Optimization: Experimented with various threshold levels, including three standard deviations from the mean reconstruction error and the 99th percentile of reconstruction errors.
-- 
+  
 These improvements enhanced the model's performance. Additionally, we decided to train and test the models over longer time periods, aggregating data at a minimum interval of one minute to ensure comparability with Kentik.
 
 
