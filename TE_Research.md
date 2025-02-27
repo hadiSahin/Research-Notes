@@ -22,7 +22,7 @@ The test from BERToD produced over 400,000 rows of data, including the frame siz
 
 We read the network topology using EVC from Kytos-ng and combined it with test results obtained from the EXFO NetBlazer. We ran logistic regression to identify problematic links and applied ML models to predict them using the BERToD test data and network topology. The topology contained some missing or inconsistent points, so we decided to review and address those issues.
 
-[Presentation slides](https://drive.google.com/file/d/1qlRv7fOelWkY7FfRLKWSto8QrTWWw3wG/view?usp=sharing)
+[Presentation slides](https://drive.google.com/file/d/1mokqCUx1TmoGbrlnuaDe1A5BvzTvRqlK/view?usp=sharing)
 
 ### February 19, 2025
 
@@ -31,7 +31,7 @@ We utilized statistical models and machine learning to identify the links respon
 [Presentation notes](https://drive.google.com/file/d/1GdEWWvtaJrMdNYTTH2tXOVOYnmLOWoy8/view?usp=sharing)
 
 
-### February 19, 2025
+### February 26, 2025
 
 We analyzed the VLANs with the highest failure rates to gain a better understanding of the problem. Specifically, we examined the correlation between different failure types.
 
