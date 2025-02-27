@@ -22,6 +22,24 @@ The test from BERToD produced over 400,000 rows of data, including the frame siz
 
 We read the network topology using EVC from Kytos-ng and combined it with test results obtained from the EXFO NetBlazer. We utilize statistical models and machine learning to identify the links responsible for failures. For the statistical analyses, we created variables for each link, assigning a value of 1 if a packet passes through that link for a given VLAN and 0 otherwise. Additionally, we introduced a counter variable to track link usage in 30-minute intervals. The statistical tests revealed some unexpected results regarding the most problematic links. Consequently, we decided to take a closer look at the data and analyze certain failure cases individually.
 
-### February 126, 2025
+### February 19, 2025
 
-We read the network topology using EVC from Kytos-ng and combined it with test results obtained from the EXFO NetBlazer. We utilize statistical models and machine learning to identify the links responsible for failures.
+We analyzed the VLANs with the highest failure rates to gain a better understanding of the problem. Specifically, we examined the correlation between different failure types.
+
+First, both frame loss and latency exhibited a strong correlation with their lagged versions (lagged by 1, 2, and 3 timestamps). Jitter and out-of-sequence errors also showed strong correlations with past occurrences, but they skipped one lagged variable. For instance, jitter at the current timestamp correlated with jitter from two timestamps prior but not with the immediate previous timestamp.
+
+Second, when examining individual VLANs, we observed varying levels of correlation across different failure types. Thus, there is no single pattern, suggesting that although the failure types appear similar, their underlying causes may differ.
+
+Third, we analyzed the time series of failures to understand how they are associated over time. While we observed some correlations in certain VLANs, this was not consistent across all cases.
+
+Next, we examined branches with multiple segments to assess whether a failure in one branch affected failures in another. We found no strong correlation, indicating that failures in each branch are largely independent of one another.
+
+Finally, we began analyzing VLANs that start with "5." However, we encountered difficulties in constructing the topology, making our analysis less conclusive. Nevertheless, the results were similar to those observed in VLANs that start with "4."
+
+We will continue investigating failure cases individually. Additionally, we plan to incorporate more information and leverage INT data to better identify the problematic links.
+
+[Presentation document](https://drive.google.com/file/d/1GdEWWvtaJrMdNYTTH2tXOVOYnmLOWoy8/view?usp=sharing)
+
+
+
+
