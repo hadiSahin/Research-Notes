@@ -20,4 +20,8 @@ The test from BERToD produced over 400,000 rows of data, including the frame siz
 
 ### February 12, 2025
 
+We read the network topology using EVC from Kytos-ng and combined it with test results obtained from the EXFO NetBlazer. We utilize statistical models and machine learning to identify the links responsible for failures. For the statistical analyses, we created variables for each link, assigning a value of 1 if a packet passes through that link for a given VLAN and 0 otherwise. Additionally, we introduced a counter variable to track link usage in 30-minute intervals. The statistical tests revealed some unexpected results regarding the most problematic links. Consequently, we decided to take a closer look at the data and analyze certain failure cases individually.
+
+### February 126, 2025
+
 We read the network topology using EVC from Kytos-ng and combined it with test results obtained from the EXFO NetBlazer. We utilize statistical models and machine learning to identify the links responsible for failures.
