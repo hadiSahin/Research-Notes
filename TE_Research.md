@@ -28,7 +28,7 @@ We read the network topology using EVC from Kytos-ng and combined it with test r
 
 We utilized statistical models and machine learning to identify the links responsible for failures. For the statistical analyses, we created variables for each link, assigning a value of 1 if a packet passes through that link for a given VLAN and 0 otherwise. Additionally, we introduced a counter variable to track link usage in 30-minute intervals. The statistical tests revealed some unexpected results regarding the most problematic links. Consequently, we decided to take a closer look at the data and analyze certain failure cases individually.
 
-[Presentation notes](https://drive.google.com/file/d/1GdEWWvtaJrMdNYTTH2tXOVOYnmLOWoy8/view?usp=sharing)
+[Presentation notes](https://drive.google.com/file/d/1mokqCUx1TmoGbrlnuaDe1A5BvzTvRqlK/view?usp=sharing)
 
 
 ### February 26, 2025
