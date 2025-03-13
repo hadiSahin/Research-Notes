@@ -49,6 +49,25 @@ We will continue investigating failure cases individually. Additionally, we plan
 
 [Presentation notes](https://drive.google.com/file/d/1-fJsfu4RRns1BVTTt6VBUsATix1jreD-/view?usp=sharing)
 
+### March 12, 2025
+
+The tests with VLAN 5XX included only packets with a fixed size of 9000. We decided to include the emix category, where we sent packets of varying sizes. These tests started on March 3. The following are the main points from our detailed descriptive analysis of failure cases:
+
+- For both VLANs 4XX and 5XX, we did not observe jitter or out-of-sequence failures for packets of size 9000.
+- Frame loss and latency are highly correlated with their lagged values.
+- Jitter and out-of-sequence failures have an alternating relationship with their lagged values—either they skip a period or their relationship with the previous value is negative.
+- We included INT queue occupancy data to control for the effect of congestion on frame loss. We observed a positive relationship between them for VLANs 415 and 430, but not for the other VLANs. However, there are two limitations to this study. During the period where data is available, we only observed out-of-sequence failures. Additionally, the data is only available for the switches used by VLANs 425 and 430.
+
+[Presentation notes](https://drive.google.com/file/d/1mokqCUx1TmoGbrlnuaDe1A5BvzTvRqlK/view?usp=sharing)
+
+
+
+
+
+
+
+
+
 
 
 
